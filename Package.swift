@@ -4,20 +4,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "PrettyBinaryString",
+    name: "PrettyBinaryIntegerString",
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "PrettyBinaryString",
-            targets: ["PrettyBinaryString"]),
+            name: "PrettyBinaryIntegerString",
+            targets: ["PrettyBinaryIntegerString"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "PrettyBinaryString"),
+            name: "PrettyBinaryIntegerString"),
         .testTarget(
-            name: "PrettyBinaryStringTests",
-            dependencies: ["PrettyBinaryString"]),
+            name: "PrettyBinaryIntegerStringTests",
+            dependencies: ["PrettyBinaryIntegerString"]),
     ]
 )
